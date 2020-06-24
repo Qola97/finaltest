@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block title %}
+머신러닝 memo
+{% endblock %}
+        {% block body %}
+        <form method="POST" action="">
+        <table border="1">
+        <tr>
+            <th><strong>과목명</strong></th>
+            <th><strong>담당교원</strong></th>
+            <th><strong><u>메모장</u></strong></th>
+        </tr>
+        <tr>
+            <th><strong>머신러닝</strong></th>
+            <th><strong>이종태 교수님</strong></th>
+            <th><a href="{{ url_for('memo1_for1') }}">memo1</a></th>
+        </tr>
+        <tr>
+            <th><strong>정보시스템통합및실습</strong></th>
+            <th><strong>간자르 교수님</strong></th>
+            <th><a href="{{ url_for('memo_for1') }}">memo1</a></th>
+        </tr>
+        <tr>
+            <th><strong>산업 AI</strong></th>
+            <th><strong>우딘 교수님</strong></th>
+            <th><a href="{{ url_for('memo_for1') }}">memo1</a></th>
+        </tr>
+        <tr>
+            <th><strong>기능</strong></th>
+        </tr>
+        <tr>
+            <th>계산기</th>
+            <th><a href="{{ url_for('sessions') }}">cal</a></th>
+        </tr>
+</table>
+        </form>
+        {% endblock %}
+
+    <div class=footer>
+    </div>

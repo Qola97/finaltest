@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block title %}
+머신러닝 memo
+{% endblock %}
+{% block body %}
+<table border="1">
+        <tr>
+            <th><strong>머신러닝</strong></th>
+            <th><strong>이종태 교수님</strong></th>
+        </tr>
+</table>
+<form method="POST" action="/memo_for1">
+    <input type="text" name="memo1">
+    <button type="submit" name="save">저장</button>
+</form>
+{% endblock %}
